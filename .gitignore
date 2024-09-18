@@ -1,1 +1,3 @@
-/data/
+*/data/
+/CAISO_ES_BIDS/data/CAISO_ES_HTML/
+*.html
