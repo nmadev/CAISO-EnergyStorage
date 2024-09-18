@@ -1,8 +1,8 @@
 # CAISO Energy Storage Bid Data Label Key
 
-This page describes the data produced by <code>CAISO_ES_BID_SCRAPING.ipynb</code> including specifications about temporal resolution, bid segments, and more. Original data are scraped from the [CAISO Daily Energy Storage Reports](https://www.caiso.com/library/daily-energy-storage-reports). This data is best understood through the [CAISO 2023 Special Report on Battery Storage](https://www.caiso.com/documents/2023-special-report-on-battery-storage-jul-16-2024.pdf).
+This page describes the data produced by `CAISO_ES_BID_SCRAPING.ipynb` including specifications about temporal resolution, bid segments, and more. Original data are scraped from the [CAISO Daily Energy Storage Reports](https://www.caiso.com/library/daily-energy-storage-reports). This data is best understood through the [CAISO 2023 Special Report on Battery Storage](https://www.caiso.com/documents/2023-special-report-on-battery-storage-jul-16-2024.pdf).
 
-The data stored in <code>data/ES_BIDS/CAISO_ES_BIDS.parquet</code> is a table with `datetime` as the index and all other columns as defined in [Feature Definitions and Specifications](#feature-definitions-and-specifications).
+The data stored in `data/ES_BIDS/CAISO_ES_BIDS.parquet` is a table with `datetime` as the index and all other columns as defined in [Feature Definitions and Specifications](#feature-definitions-and-specifications).
 
 ## Abbreviation and Term Definitions
 
@@ -54,7 +54,7 @@ Definitions sourced from these resources:
 
 #### Bid Segment Labels
 
-Bid segments from the table above are defined below.
+Bid segments from the table above are defined below. The "suffix" column represents the number/characters at the end of `bid` columns labels (i.e. `##` in `bid_ifm_pos_hybrid_{##}`).
 
 | Suffix  | Description/Range |
 |---------|-------------------|
