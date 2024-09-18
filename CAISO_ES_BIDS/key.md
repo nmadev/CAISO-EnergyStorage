@@ -2,6 +2,8 @@
 
 This page describes the data produced by <code>CAISO_ES_BID_SCRAPING.ipynb</code> including specifications about temporal resolution, bid segments, and more. Original data are scraped from the [CAISO Daily Energy Storage Reports](https://www.caiso.com/library/daily-energy-storage-reports). This data is best understood through the [CAISO 2023 Special Report on Battery Storage](https://www.caiso.com/documents/2023-special-report-on-battery-storage-jul-16-2024.pdf).
 
+The data stored in <code>data/ES_BIDS/CAISO_ES_BIDS.parquet</code> is a table with `datetime` as the index and all other columns as defined in [Feature Definitions and Specifications](#feature-definitions-and-specifications).
+
 ## Abbreviation and Term Definitions
 
 
@@ -19,12 +21,12 @@ This page describes the data produced by <code>CAISO_ES_BID_SCRAPING.ipynb</code
 | `rd`  | Regulation Down - An Ancillary Service (AS) for CAISO operation in a capacity market for the instant <b>decrease</b> in operating level |
 | `sr`  | Spinning Reserves - Available generation that is running and capable of <b>ramping within 10 minutes</b> and <b>running for at least 2 hours</b> |
 | `nr`  | Non-Spinning Reserves - Available generation that is not running but can <b>ramp and be synchronized within 10 minutes</b> |
-| `ifm` | Integrated forward market - day-ahead unit commitment and congestion management market |
-| `ruc` | Residual unit commitment - reliability function to account for the different in the projected and real demand in CAISO with shorter commitment instruction horizons |
+| `ifm` | Integrated forward market - Day-ahead unit commitment and congestion management market |
+| `ruc` | Residual unit commitment - Reliability function to account for the different in the projected and real demand in CAISO with shorter commitment instruction horizons |
 | `rtpd`| Real-time pre-dispatch (?) |
 | `rtd` | Real-time dispatch (?) |
-| `fmm` | Fifteen-minute market (?) |
-| `ss`  | Self schedule (?) |
+| `fmm` | Fifteen-minute market - Fifteen minute market scheduling in the day-ahead market |
+| `ss`  | Self schedule - Self-scheduled battery operation (charge/discharge) |
 
 Definitions sourced from these resources:
 - https://www.caiso.com/documents/2023-special-report-on-battery-storage-jul-16-2024.pdf
