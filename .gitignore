@@ -1,3 +1,7 @@
 /CAISO_ES_BIDS/data/CAISO_ES_HTML/
 !CAISO_ES_BIDS/data/CAISO_ES_BIDS/
 *.html
+
+/CAISO_LMP_PriceExtraction/data/LMP_CSV/
+!CAISO_LMP_PriceExtraction/data/LMP/
+*.csv
