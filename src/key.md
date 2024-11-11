@@ -15,16 +15,16 @@ The data stored in `data/ES_BIDS/CAISO_ES_BIDS.parquet` is a table with `datetim
 | `energy` | Energy in MW |
 | `charge` | State of Charge in MWh |
 | `hybrid` | Hybrid resources (i.e. storage + renewables being treated as a single source) |
-| `neg` | Negative values |
-| `pos` | Positive values |
+| `neg` | Negative values (typically charge) |
+| `pos` | Positive values (typically discharge) |
 | `ru`  | Regulation Up - An Ancillary Service (AS) for CAISO operation in a capacity market for the instant <b>increase</b> in operating level |
 | `rd`  | Regulation Down - An Ancillary Service (AS) for CAISO operation in a capacity market for the instant <b>decrease</b> in operating level |
 | `sr`  | Spinning Reserves - Available generation that is running and capable of <b>ramping within 10 minutes</b> and <b>running for at least 2 hours</b> |
 | `nr`  | Non-Spinning Reserves - Available generation that is not running but can <b>ramp and be synchronized within 10 minutes</b> |
 | `ifm` | Integrated forward market - Day-ahead unit commitment and congestion management market |
 | `ruc` | Residual unit commitment - Reliability function to account for the different in the projected and real demand in CAISO with shorter commitment instruction horizons |
-| `rtpd`| Real-time pre-dispatch (?) |
-| `rtd` | Real-time dispatch (?) |
+| `rtpd`| Real-time pre-dispatch - Market typically cleared several hours ahead, prior to real-time dispatch |
+| `rtd` | Real-time dispatch - Reactive market cleared minutes prior to dispatch to respond to immediate grid changes |
 | `fmm` | Fifteen-minute market - Fifteen minute market scheduling in the day-ahead market |
 | `ss`  | Self schedule - Self-scheduled battery operation (charge/discharge) |
 
